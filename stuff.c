@@ -1,3 +1,3 @@
-stuff.c
-stuff.c
+stuff.a
+stuff.b
 stuff.c
