@@ -1,17 +1,11 @@
-function searchById(){
-console.log("searchByID");
+movie=require ("../model/movieModel");
+function getMovies(){
+//testing code
+console.log("getMovies");
 var id = $("#id").val();
 console.log("Id: " + id);
-var name=$.get("/patient",{id:id}, function(data) {
-  console.log("back from server with: " + data);
-  console.log(data);
-  return data[0]["name"];
-});
+return movie.getMovies("fast");
 
-$("#patients").append(string + "bob" +"</li>");
-console.log(`name is ${name}`);
-
-console.log("finished");
 };
 
 function getAllPatients(){
