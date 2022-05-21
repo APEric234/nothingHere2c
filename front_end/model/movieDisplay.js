@@ -1,11 +1,10 @@
 
-
-function makeDisplayMovie(){
+const movie=require ("../model/movieModel");
+function makeDisplayMovie(title){
   //get movie display html element created
   
   //simplest version
-  return "<div id=movie><ul><li>Fast and Furious 70 <ul><li><b>year: </B>2027</li><li><b>Genre: </B>action</li>";
-
+  return movie.getMovie(title);
   /* var sql = "select * from medicines";
   pool.query(sql, function(err,res){
     if(err){

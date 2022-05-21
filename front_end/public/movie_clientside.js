@@ -1,28 +1,15 @@
-movie=require ("../model/movieModel");
+const movieDisplay = require("../model/movieDisplay");
+
+document.getElementById("para").onclick = getMovies()
 function getMovies(){
-//testing code
-console.log("getMovies");
-var id = $("#id").val();
-console.log("Id: " + id);
-return movie.getMovies("fast");
+  //testing code
+  console.log("getMovies");
+  var id = $("#id").val();
+  console.log("Id: " + id);
+  var movieListUl= document.getElementById("movie")
+  var newMovieLi=document.createElement("li");
+  newMovieLi.innerHTML=movieDisplay.makeDisplayMovie("fast");
+  movieListUl.appendChild(newMovieLi);
 
 };
-
-function getAllPatients(){
-  console.log("got here");
-  $.get("/patients", function(data) {
-    console.log("got here 2");
-    console.log("back from server with: " + data);
-    var list =data["patients"];
-    console.log(list);
-    for (var x in list){
-
-      y = list[x]
-      for (var z in y){
-        console.log(z);
-        console.log(x);
-      $("#patients").append("<li> " + z + " </li>");
-      }
-    }
-  })
-  };
+document.getElementById("para").onclick = getMovies;

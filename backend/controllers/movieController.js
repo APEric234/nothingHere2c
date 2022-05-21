@@ -1,4 +1,4 @@
-const patientModels = require("../../front end/model/movieModel");
+const patientModels = require("../../front_end/model/movieModel");
 function allPatients(req,res){
   //get all patients
   console.log("getting all patients");

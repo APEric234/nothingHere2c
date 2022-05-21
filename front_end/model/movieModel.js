@@ -2,8 +2,8 @@ const connection = require("../../apiconnection");
 function getMovie(title){
   //get all topics
 
-  var sql = "select * from patients";
   
+  return "<div id=movie><ul><li>Fast and Furious 70 <ul><li><b>year: </B>2027</li><li><b>Genre: </B>action</li>";
 
 }
 function getPatientById(num){

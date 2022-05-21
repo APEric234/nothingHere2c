@@ -1,4 +1,4 @@
-const medicineModel = require("../front end/model/movieDisplay");
+const medicineModel = require("../front_end/model/movieDisplay");
 
 function allMedicines(req, res) {
   //get all patients
