@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(express.urlencoded({extended:true}));//support url encoded body
 app.use(express.json());
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/frontend/public/movie.html'));
+  res.sendFile(path.join(__dirname, '/front_end/public/movie.html'));
 });
 /* app.get("/patients",patientController.allPatients);
 app.get("/patient",patientController.singlePatient);
