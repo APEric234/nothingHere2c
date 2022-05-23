@@ -1,5 +1,6 @@
 
-const movie=require ("../model/movieModel");
+const movie=require ("./movieModel");
+
 function makeDisplayMovie(title){
   //get movie display html element created
   
@@ -19,6 +20,4 @@ function makeDisplayMovie(title){
 
 }
 
-module.exports = {makeDisplayMovie:makeDisplayMovie
-
-}
+module.exports = {makeDisplayMovie:makeDisplayMovie}
